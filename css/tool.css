@@ -1,0 +1,43 @@
+.fr{
+	float: right;
+}
+.fl{
+	float:left;
+}
+.clearfix:after{
+	content: "";
+	display: block;
+	clear:both;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+.comborder{
+	border:2px solid orange;
+}
+body,h1,ul,li,dl,dt,dd{
+	margin:0;
+	padding: 0;
+}
+body{
+	position: absolute;
+}
+.hidden{
+	display:none;
+}
+.circle{
+	width:20px;
+	height:20px;
+	display: block;
+	border-radius:50px;
+	background-color: orange;
+}
+.bg_icn{
+	width:100px;
+	height:100px;
+	display: block;
+	background-image: url(../image/bg_icn1.png);
+	background-repeat: no-repeat;
+}
+html { overflow: hidden; }//强制隐藏滚动条

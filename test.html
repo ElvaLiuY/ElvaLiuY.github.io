@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		body{
+			margin:0;
+			/*height:1000px;*/
+		}
+		#probox{
+			width:100%;
+			height:auto;
+			background-color: rgba(0,0,0,.1);
+			/*position: fixed;*/
+			position: absolute;
+		}
+		#procont{
+			/*width:500px;*/
+			width: 60%;
+			max-width: 600px;
+			margin:20px auto;
+			border-radius: 30px;
+			/*border: 5px solid white;*/
+			background-color: lemonchiffon;
+			min-height: 600px;
+			box-shadow: 0 0 30px #000;
+			padding:40px;
+			box-sizing: border-box;
+			/*position: relative;*/
+		}
+		dl,dt,dd{
+			margin:0;padding: 0;
+		}
+		#procont dl{
+			margin-bottom: 20px;
+		}
+		#procont p{
+			padding:0 30px;
+			font:14px/20px "微软雅黑";
+			margin:5px 0;
+		}
+		#procont h6{
+			font:bold 16px/24px "微软雅黑";
+			margin:10px 0;
+			
+		}
+		#procont dt{
+			text-align: center;
+			font:bold 18px/24px "微软雅黑";
+			margin:15px 0;
+		}
+		#probox input{
+			width:80px;
+			height:80px;
+			border-radius:50%;
+			font:24px/50px arial;
+			border: 2px solid greenyellow;
+			background-color:rgba(0,0,0,0.6);
+			box-shadow: 0 0 10px #000;
+			color:white;
+			/*border: none;*/
+			position: absolute;
+			right:100px;
+			top:50px;
+			cursor:pointer;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="probox">
+			<input type="button" value="close"/>
+			<div id="procont">
+				<dl>
+					<dt>百度网盘</dt>
+					<dd>
+						<h6>作品简介：</h6>
+						<p>仿照百度云盘，构造页面结构，仿照用户操作还原效果，项目利用local storag和cookie模仿和服务器的数据交互</p>
+					</dd>
+					<dd>
+						<h6>技术描述：</h6>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+					</dd>
+					<dd>
+						<h6>作品链接：<a href="">百度云盘</a></h6>
+					</dd>
+				</dl>
+				<!--<dl>
+					<dt>百度网盘</dt>
+					<dd>
+						<h6>作品简介：</h6>
+						<p>仿照百度云盘，构造页面结构，仿照用户操作还原效果，项目利用local storag和cookie模仿和服务器的数据交互</p>
+					</dd>
+					<dd>
+						<h6>技术描述：</h6>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+						<p>新建文件夹一系列功能：新建、删除、重命名、新建中的确认、取消</p>
+					</dd>
+					<dd>
+						<h6>作品链接：<a href="">百度云盘</a></h6>
+					</dd>
+				</dl>-->
+				<p>PS：作品仅供展示，程序只是简单实现了一些功能，并未做深度的完善处理，BUG比较多，尤其是游戏部分是前段时间写的，问题更多些，后续会考虑完善，欢迎吐槽！</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js" ></script>
+		<script type="text/javascript" src="js/info.js" ></script>
+		<script>
+			function probox(data){
+				var $probox=$("<div id='probox'></div>");
+				var $procont=$("<div id='procont'></div>");
+				var str="";
+				$.each(data,function(i,item){
+					str+='<dl>'+
+							'<dt>'+item.name+'</dt>'+
+							'<dd>'+
+								'<h6>作品简介：</h6>'+
+								'<p>'+item.des+'</p>'+
+							'</dd>'+createdet(item.detail)+
+							'<dd>'+
+								'<h6>作品链接：<a href="">'+item.plink+'</a></h6>'+
+							'</dd>'+
+						'</dl>';
+				})
+				str+='<p>PS：作品仅供展示，程序只是简单实现了一些功能，并未做深度的完善处理，BUG比较多，尤其是游戏部分是前段时间写的，问题更多些，后续会考虑完善，欢迎吐槽！</p>';
+				$probox.append($procont.html(str)).appendTo($("body"))
+			}
+			
+//			probox(info.game)
+			
+			
+		function createdet(data){
+			var str="";
+			if(!data){
+				return str;
+			}
+			$.each(data,function(i,item){
+				str+='<p>'+(i+1)+"."+item+'</p>';
+			})
+			return '<dd>'+'<h6>技术描述：</h6>'+str+'</dd>';
+		}
+
+		</script>
+	</body>
+</html>

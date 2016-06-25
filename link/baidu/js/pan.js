@@ -1,4 +1,4 @@
-﻿(function(){
+(function(){
 	objCss();
 	window.onresize=function(){
 		objCss();
@@ -7,7 +7,7 @@
 	if(user==""){
 		alert("请先登陆")
 		setTimeout(function(){
-			window.location.href="index.html";
+			window.location.href="yunload.html";
 		},500)
 	}
 	user=user.substring(5);
@@ -83,6 +83,7 @@
 			T.each(arr,function(item){
 				item.pid=1;
 			})
+			 T.store("baidu",datas)
 		}
 		refresh(hidbox.value)
 	})

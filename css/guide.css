@@ -1,0 +1,76 @@
+#guide{
+	width:100%;
+	height:100%;
+	background-color: black;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+#guide #gidbox{
+	width:600px;
+	height:600px;
+	margin:100px auto;
+	position: relative;
+}
+#gidbox #gpic1{
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	overflow:hidden ;
+	position: absolute;
+	top:100px;
+	z-index: 2;
+}
+#gpic1 img{
+	width:100%;
+}
+#gidbox #glist{
+	position: absolute;
+	right:0;
+	top:0;
+	text-align: center;
+	width:500px;
+	height:600px;
+	z-index: 1;
+}
+#glist span{
+	display: block;
+	color:orange;
+	font:30px/100px "楷体";
+	width:100px;
+	height:100px;
+	border: 2px solid orange;
+	border-radius: 50%;
+	background-color:lightgoldenrodyellow;
+	position:absolute;
+	left:0;
+	top:250px;
+/*	margin:25px;*/
+	opacity: 0;
+	transition: 2s;
+	transform: scale(0);
+}
+
+#gidbox #clkenter{
+	position: absolute;
+	right:-200px;
+	bottom:200px;
+	width:100px;
+	height:50px;
+	/*border:2px solid darkorange;*/
+	border-radius: 20px;
+	text-align: center;
+	background-color:;
+}
+/*#clkenter span{
+	color:white;
+	display: block;
+	width:100%;
+	height:50px;
+	padding:20px 0;
+}*/
+#clkenter a{
+	font:30px/50px "微软雅黑";
+	color:white;
+}

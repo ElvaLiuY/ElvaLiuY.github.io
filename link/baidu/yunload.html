@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>百度云·load</title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" href="css/yunload.css" />
+		<script>
+			document.getElementsByTagName("html")[0].style.fontSize = document.documentElement.clientWidth / 16 + "px";
+		</script>
+	</head>
+	<body id="yunLoad">
+		<header class="headbox">
+			<h1 class="fl"><a href="javascript:;" class="log">百度云</a></h1>
+			<nav class="maiNav fl">
+				<a href="javascript:;">主页</a>
+				<div class="panlink">
+					<a href="javascript:;">网盘</a>
+					<span class="trigle fl"></span>
+					<ul class="pLink" style="display: none;">
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+						<li><span></span><span></span></li>
+					</ul>
+				</div>
+				<a href="javascript:;">分享</a>
+				<a href="javascript:;">应用</a>
+			</nav>
+			<div class="topRgt fr">
+				<div  class="customer">
+					<em class="">超级会员低至六折</em>
+					<a href="javascript:;">会员中心</a>
+					<span class="line"></span>
+				</div>
+				<div>
+					<a href="javascript:;">客户端下载</a>
+					<span class="line"></span>
+				</div>
+				<div>
+					<a href="javascript:;">更多</a>
+					<span class="trigle"></span>
+				</div>
+			</div>
+		</header>
+		<section class="ylcont">
+			<div class='backg'>
+				<img src="img/yunbg001.png" />
+			</div>
+			<form class="regiter">
+				<ul class="fl">
+					<li class="clearfix regti">
+						<span class="fl bg"></span>
+						<h5 class="fl">登陆百度账号</h5>
+						<a href="javascript:;" class="fr">海外手机号</a>
+					</li>
+					<li class="writform">
+						<div class="wflist">
+							<span class="bg fl"></span>
+							<input type="text" class="fl" placeholder="手机/邮箱/用户名" id="userName" />
+						</div>
+						<div class="wflist wfpword">
+							<span class="bg fl"></span>
+							<input type="password"  class="fl" placeholder="密码" id="passWord"/>
+						</div>
+					</li>
+					<li class="clearfix loadSel">
+						<label class="fl"><input type="checkbox" />下次自动登录</label>
+						<a href="javascript:;" class="fr">登录遇到问题</a>
+					</li>
+					<li class="loadbtn">
+						<a href="javascript:;" id="Load">登 录</a>
+					</li>
+					<li class="loadlink clearfix">
+						<span class="fl">可以使用以下方式登录：</span>
+						<a href="javascript:;" class="linkqq fl"><span class="bg"></span></a>
+						<a href="javascript:;" class="linkwb fl"><span class="bg"></span></a>
+					</li>
+				</ul>
+				<div class="regbtn fl">
+					<a href="javascript:;">立即注册百度账号</a>
+				</div>
+				<div class="remind" id="remind">
+					<p><strong>账号备选：</strong></p>
+					<p>用户名：aaa</br>密码：111</p>
+					<p>用户名：bbb</br>密码：222</p>
+					<p>用户名：ccc</br> 密码：333</p>
+				</div>
+			</form>
+<!--			<div class="shareStar">
+				<div class="shareTit">
+					<span>分享达人</span>
+					<span class="bg sChange">换一批</span>
+				</div>
+				<ul></ul>
+			</div>
+			<div>
+				<a href="javascript:;">
+					<span></span>
+					<span> windows</span>
+				</a>
+				<a href="javascript:;">
+					<span></span>
+					<span>phone</span>
+				</a>
+				<a href="javascript:;">
+					<span></span>
+					<span>pad</span>
+				</a>
+			</div>-->
+		</section>
+		<footer>
+			<div>
+				<a href="javascript:;">©2016 Baidu 移动开放平台</a>|
+				<a href="javascript:;">服务协议</a>|
+				<a href="javascript:;">权利声明</a>|
+				<a href="javascript:;">版本更新</a>|
+				<a href="javascript:;">帮助中心</a>|
+				<a href="javascript:;">问题反馈</a>|
+				<a href="javascript:;">版权投诉</a>
+			</div>
+		</footer>
+		<script>
+			/******仅作登陆用********/
+			/*1.三组提供用户名账号 username:aaa bbb  ccc      pw:123  
+			 *2.验证登陆信息
+			 *3.页面跳转
+			 * */
+			var user=[{name:"aaa",pw:"111"},{name:"bbb",pw:"222"},{name:"ccc",pw:"333"}];
+			document.cookie="user="+JSON.stringify(user);//写入cookie
+			var Load=document.getElementById("Load");
+			var userName=document.getElementById("userName");
+			var passWord=document.getElementById("passWord");
+			Load.onclick=function(){
+				var userinfo=document.cookie.substring(5);
+				userinfo=JSON.parse(userinfo)
+//				console.log(userinfo)
+				for(var attr in userinfo){
+					if(userinfo[attr].name==userName.value){
+						if(userinfo[attr].pw==passWord.value){
+							alert("登陆成功")
+							user=userinfo[attr];
+							document.cookie="user="+JSON.stringify(user);
+							setTimeout(function(){
+								window.location.href="pan.index.html";	
+							},500)
+							return
+						}
+					}
+				}
+				alert("用户名或密码错误")
+			}
+//			var remind=document.getElementById("remind");
+			
+			
+		/****可以用以下方法 进行注册 写入 获取 移除*******/
+		/*function removeCookie(key) {
+            setCookie(key, '', -1);
+        }
+
+        function setCookie(key, value, expires) {
+            var date = new Date();//expires  过期时间   
+            date.setDate( date.getDate() + expires );//通过该设置 过期时间 为几天后
+            document.cookie = key + '=' + value + ';expires=' + date.toUTCString();
+        }
+
+        function getCookie(key) {
+            var arr1 = document.cookie.split('; ');
+            for (var i=0; i<arr1.length; i++) {
+                var arr2 = arr1[i].split('=');
+                if (arr2[0] == key) {
+                    return arr2[1];
+                }
+            }
+        }*/
+		</script>
+	</body>
+</html>
+				

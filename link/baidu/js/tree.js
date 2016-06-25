@@ -142,8 +142,9 @@ function refreshType(type){
 function getroot(id){
 	var obj=getInfo(id);//找到文件信息
 	var arr=[];
+//	if(!obj){}
 	arr.push(obj)
-	while(obj.pid){//父级pid不为零
+	while(obj&&obj.pid){//父级pid不为零
 //			id=obj.pid;
 		obj=getInfo(obj.pid);
 		arr.push(obj);
@@ -278,9 +279,18 @@ function renderNav(id){
 			console.log(T.store("baidu"),datas);
 		}
 		function singleSel(li,target){
+			if(target.tagName=="INPUT"){
+				target.style.display="block";
+				li.style.border="1px solid #2e80dc";
+				checksel()
+				return;
+			}
+			var target=T.$(".checkbtn",li)[0];
+//			console.log(target);
+			target.style.display="block";
+			target.checked=!target.checked;
 			if(target.checked){
 				li.style.border="1px solid #2e80dc";
-				target.style.display="block";
 			}
 			checksel()
 		}
@@ -291,12 +301,11 @@ function renderNav(id){
 			}else if(ev.target==fconcel){
 				T.$("#filebox").removeChild(li);
 				createbtn.onoff=true;
-			}else if(ev.target==checkbtn){
+			}else if(ev.target==inptext){
+				return false;
+			}else{
 				singleSel(li,ev.target)
-			}
-//			else if(ev.target==inptext){
-//				return false;
-//			}
+			};
 //			else{
 //				hidbox.value=options.id;
 //				refresh(options.id);
@@ -309,10 +318,10 @@ function renderNav(id){
 			window.location.hash="#id="+options.id;
 		}
 		T.addEvent(li,"mouseover",function(ev){
-			if(!ev.target.nodeName=="input"){
+//			if(!ev.target.nodeName=="input"){
 				li.style.border="1px solid #2e80dc";
 				checkbtn.style.display="block";
-			}
+//			}
 
 		})
 		T.addEvent(li,"mouseleave",function(){
@@ -349,9 +358,18 @@ function renderNav(id){
 			function dragmove(ev){
 				var ev=ev||event;
 				var left,top;
-				ev.clientX-disx>0?left=ev.clientX-disx:left=0;
+			//	ev.clientX-disx>0?left=ev.clientX-disx:left=0;
 				ev.clientY-disy>0?top=ev.clientY-disy:top=0;
-				ev.clientX-disx>filebox.offsetWidth-100?left=filebox.offsetWidth-100:left=ev.clientX-disx;
+			//	ev.clientX-disx>filebox.offsetWidth-100?left=filebox.offsetWidth-100:left=ev.clientX-disx;
+				if(ev.clientX-disx>0){
+          if(ev.clientX-disx>filebox.offsetWidth-100){
+              left=filebox.offsetWidth-100
+          }else{
+            left=ev.clientX-disx
+          }
+				}else{
+          left=0;
+				}
 //				console.log(left,top);	
 				obj.style.left=left+"px";
 				obj.style.top=top+"px";
@@ -765,7 +783,7 @@ function selinfo(){
 			arr.push(getInfo(item.id))
 		}
 	})
-	console.log(arr)
+	//console.log(arr)
 	return arr;
 }
 function rename(id){
