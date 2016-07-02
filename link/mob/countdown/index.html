@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>倒计时器</title>
+<meta name="viewport" content="width=device-width,user-scalable=no" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="x5-orientation" content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="screen-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<link rel="stylesheet" href="css/index.css" />
+<script>
+setSize();
+window.addEventListener("resize",setSize,false);
+window.addEventListener("orientationchange",setSize,false);
+function setSize()
+{
+	var html=document.getElementsByTagName("html")[0];
+	var width=html.getBoundingClientRect().width;
+	html.style.fontSize=width/16+"px";
+}
+</script>
+<script src="js/touchScroll.js"></script>
+
+
+
+</head>
+<body>
+
+<article class="wrap" id="start" >
+	<section class="min">
+    	<img src="img/time.png" class="startTime" />
+        <a href="javascript:;" id="startBtn" class="btn" >设置时间</a>
+    </section>
+</article>
+<article class="wrap" id="animate">
+	<section class="min">
+    	<section id="time">
+        		<time>00:00</time>
+                <p>正在计时</p>
+        </section>
+        <article id="timeWarp">
+        	<header class="timeHead">
+            	<span>Minute</span>
+                <span>Second</span>
+            </header>
+            <section id="round">
+                <section class="roundWrap"></section>
+                <section class="roundWrap"></section>
+                <section class="roundWrap"></section>
+                <section class="roundWrap"></section>
+                <div id="mask"></div>
+            </section>
+        </article>
+         <a href="javascript:;" id="setBtn" class="btn" >开始计时</a>		
+    </section>
+    <section class="alert" >
+    	<div class="tip">倒计时结束</div>
+    	<audio src="mp3/bg.mp3" loop="loop" id="music" >您的浏览器不支持 audio标签。</audio>
+    	<a href="javascript:;" id="resetBtn" class="btn" >重置时间</a>
+    </section>
+ 
+</article>
+<script type="text/javascript" src="js/index.js" ></script>
+</body>
+</html>

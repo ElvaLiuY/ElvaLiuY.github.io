@@ -57,6 +57,8 @@ $("#fixbox span").on("click",function(){
 	var dis=home.children[index].getBoundingClientRect().top;
 	var nowtop=$("body").offset().top;
 	$("body").animate({top:nowtop-dis},500);
+//	scroPos(nowtop-dis,true)
+	$("#scrollbox .scr_bar").animate({top:-(nowtop-dis)*($windH-$scrbar.height())/($h-$windH)},500);
 	if(index==1){
 		skilbarShow()
 	}else{
@@ -208,9 +210,9 @@ $.each($(".show_det_box"), function(i,item) {
 /******作品弹窗*********/
 function probox(data){
 	console.log(data);
-	var $probox=$("<div id='probox'><input type='button' value='close' id='closebtn'/></div>");
+	var $probox=$("<div id='probox'><input type='button' value='close' id='closebtn'/><span id='goup'>↑</span><span id='godown'>↓</span></div>");
 	var $procont=$("<div id='procont'></div>");
-	var str="";
+	var str="<div id='det_wrap'>";
 	$.each(data,function(i,item){
 		str+='<dl>'+
 				'<dt>'+item.name+'</dt>'+
@@ -223,8 +225,9 @@ function probox(data){
 				'</dd>'+
 			'</dl>';
 	})
-	str+='<p>PS：作品仅供展示，程序只是简单实现了一些功能，并未做深度的完善处理，BUG比较多，尤其是游戏部分是前段时间写的，问题更多些，后续会考虑完善，欢迎吐槽！</p>';
+	str+='<p>PS：作品仅供展示，程序只是简单实现了一些功能，并未做深度的完善处理，BUG比较多，尤其是游戏部分是前段时间写的，问题更多些，后续会考虑完善，欢迎吐槽！</p></div>';
 	$probox.append($procont.html(str)).appendTo($("body"))
+	showGodown();
 	function createdet(data){
 		var str="";
 		if(!data){
@@ -238,6 +241,24 @@ function probox(data){
 	$("#closebtn").on("click",function(){
 		$probox.remove();
 	})
+	function showGodown(){
+		if($("#det_wrap").height()>580){
+//			alert(1)
+			$("#godown").css("display","block").on("click",function(){
+				$("#det_wrap").stop().animate({"top":(460-$("#det_wrap").height())},1000,function(){
+					$("#godown").hide();
+					$("#goup").show().on("click",function(){
+						$("#det_wrap").stop().animate({"top":0},1000,function(){
+							$("#goup").hide();
+							$("#godown").show();
+						});
+					});
+				});
+		})
+		}else{
+			$("#godown").hide();
+		}
+	}
 }
 /********设置联系图标效果*******/
 $(".cont_icn span").on("mouseover",function(){

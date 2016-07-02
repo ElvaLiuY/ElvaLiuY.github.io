@@ -402,7 +402,10 @@ footer p{
 	/*width:500px;*/
 	width: 60%;
 	max-width: 600px;
+	max-height: 600px;
+	overflow: hidden;
 	margin:20px auto;
+	position: relative;
 	border-radius: 30px;
 	/*border: 5px solid white;*/
 	background-color: lemonchiffon;
@@ -432,7 +435,7 @@ footer p{
 	font:bold 18px/24px "微软雅黑";
 	margin:15px 0;
 }
-#probox input{
+#probox input,#godown,#goup{
 	width:80px;
 	height:80px;
 	border-radius:50%;
@@ -446,6 +449,7 @@ footer p{
 	right:250px;
 	top:50px;
 	cursor:pointer;
+	z-index: 2;
 }
 #contact .con_cont{
 	width:100%;
@@ -501,4 +505,19 @@ footer p{
 .con_icn_ative{
 	background-color:lightsalmon;
 	/*opacity: 0.3;*/
+}
+#godown,#goup{
+	position: absolute;
+	top:auto;
+	bottom:50px;
+	right:250px;
+	width:50px;
+	height:50px;
+	text-align: center;
+	border: 2px solid orange;
+	display: none;
+	z-index: 3;
+}
+#det_wrap{
+	position: relative;
 }
