@@ -1,0 +1,523 @@
+/**指引部分***/
+#guide{
+	width:100%;
+	height:100%;
+	background-color: black;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index: 2;
+}
+#guide #gidbox{
+	width:600px;
+	height:600px;
+	margin:100px auto;
+	position: relative;
+}
+#gidbox #gpic1{
+	width:300px;
+	height:300px;
+	border-radius: 50%;
+	overflow:hidden ;
+	position: absolute;
+	top:100px;
+	z-index: 2;
+}
+#gpic1 img{
+	width:100%;
+}
+#gidbox #glist{
+	position: absolute;
+	right:0;
+	top:0;
+	text-align: center;
+	width:500px;
+	height:600px;
+	z-index: 1;
+}
+#glist span{
+	display: block;
+	color:orange;
+	font:30px/100px "楷体";
+	width:100px;
+	height:100px;
+	border: 2px solid orange;
+	border-radius: 50%;
+	background-color:lightgoldenrodyellow;
+	position:absolute;
+	left:0;
+	top:250px;
+/*	margin:25px;*/
+	opacity: 0;
+	transition: 2s;
+	transform: scale(0);
+}
+
+#gidbox #clkenter{
+	position: absolute;
+	right:-200px;
+	bottom:200px;
+	width:100px;
+	height:50px;
+	/*border:2px solid darkorange;*/
+	border-radius: 20px;
+	text-align: center;
+	background-color:;
+}
+/*#clkenter span{
+	color:white;
+	display: block;
+	width:100%;
+	height:50px;
+	padding:20px 0;
+}*/
+#clkenter a{
+	font:30px/50px "微软雅黑";
+	color:white;
+}
+/***head****/
+#home header{
+	width:100%;
+}
+#home .hhead{
+	width:100%;
+	height:100px;
+	background:lightcyan;
+	/*position: fixed;
+	top:0;
+	left:0;*/
+}
+.hhead .topbox{
+	width:70%;
+	height:100px;
+	margin:0 auto;
+}
+.topbox h1{
+	margin-top:10px;
+}
+.topbox h1 a{
+	width:200px;
+	height:0;
+	padding-top:60px;
+	display: block;
+	background: url(../image/log/LOGO1.png);
+	overflow: hidden;
+}
+.topbox .mainnav{
+	height:80px;
+	box-sizing: border-box;
+	padding:20px 0;
+}
+.mainnav div{
+	width:80px;
+	height:40px;
+	border-radius: 20px;
+	border:2px solid orange;
+	margin-right: 20px;
+	overflow: hidden;
+	transform-style: preserve-3d;
+	 /*perspective:200px;*/
+	/*background-color: lemonchiffon;*/
+}
+.mainnav .wrap_nav{
+	border: none;
+	/*position: relative;*/
+	width:80px;
+	height:40px;
+	/*margin:0 auto;*/
+}
+.mainnav div span{
+	display: block;
+	text-align: center;
+	background-color: lemonchiffon;
+	width:80px;
+	text-align: center;
+	height:40px;
+	font:20px/40px "楷体";
+	/*position: absolute;
+	top:0;
+	left: 0;*/
+}
+/*.mainnav div span:nth-child(even){
+	transform-origin:top;
+	transform: rotateX(-90deg);
+	top:40px;
+}
+.wrap_nav:hover{
+	transform: rotateX(90deg);
+	transition: 1s;
+	transform-origin:40px 20px -20px;
+}*/
+/****大图*****/
+#hpic{
+	width:80%;
+	height:450px;
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+#hpic img{
+	width:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
+/********/
+#resume,#product,#contact{
+	width:80%;
+	/*height:600px;*/
+	/*background-color: lightgreen;*/
+	margin:0 auto 20px;
+}
+
+#fixbox{
+	position: fixed;
+	right:50px;
+	top:50%;
+	width:20px;
+	height:150px;
+}
+#fixbox span{
+	margin:10px 0;
+	cursor:pointer;
+}
+.active{
+	background-color: lawngreen;
+}
+
+/*******section header*******/
+h5 .line{
+	width:5px;
+	height:30px;
+	background-color: orange;
+	display:block;
+	margin-right: 4px;
+}
+h5 strong{
+	font:bold 20px/30px "楷体";
+}
+/********resume************/
+.re_box{
+	margin:20px auto;
+	width: 800px;
+	/*background-color: orange;*/
+	/*width:auto;*/
+}
+.re_box .re_pic{
+	width:200px;
+	height:200px;
+	margin-right:100px;
+}
+.re_pic .showpic{
+	width:200px;
+	height:200px;
+	display: block;
+	border-radius: 50%;
+	background: url(../image/img001.jpg) no-repeat;
+	background-size: 200px;
+}
+.re_pic p{
+	margin-top: 30px;
+}
+.re_pic p span{
+	width:200px;
+	height:30px;
+	display: block;
+	text-align: center;
+}
+.re_cont{
+	width:500px;
+	height:400px;
+	padding:50px;
+	box-sizing: border-box;
+	background: lightgoldenrodyellow;
+	font: 14px/26px "微软雅黑";
+	box-shadow:0 0 20px #000000;
+	border-radius: 20px;
+}
+.re_cont dd{
+	
+	max-height: 210px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.re_cont dl{
+	float: left;
+	display: none;
+}
+.re_cont .more{
+	width:150px;
+	font:bold 20px/30px "微软雅黑";
+	display: block;
+	border: 2px solid orange;
+	text-align: center;
+	border-radius: 10px;
+	float: right;
+	/*margin-top:30px;*/
+	cursor: pointer;
+}
+.re_cont .more:hover{
+	background:lightcyan;
+}
+.re_cont ul{
+	width:100%;
+	height:auto;
+}
+.re_cont ul span{
+	width:80px;
+	display: inline-block;
+}
+.re_cont ul li{
+	margin:10px 0;
+}
+.re_cont .wrap_bar{
+	width:200px;
+	height:20px;
+	border: 2px solid darkgray;
+	display: inline-block;
+	border-radius: 10px;
+	overflow: auto;
+}
+.re_cont .skil_box{
+	width:100%;
+	height:240px;
+	position: relative;
+}
+.wrap_bar div{
+	height:100%;
+/*	width:50%;*/
+	width:0;
+	background-color: orange;
+}
+/*****product************/
+#product ul{
+	width:100%;
+}
+
+#product li{
+	width:33%;
+	list-style: none;
+	float:left;
+	padding: 20px;
+	height:400px;
+	box-sizing: border-box;
+}
+#product img{
+	width:100%;
+	max-height: 300px;
+}
+#product .show{
+	width:100%;
+/*	position: relative;*/
+}
+#product .show p{
+	/*position: absolute;
+	width:100%;
+	bottom:-50px;*/
+	text-align: center;
+}
+#product li:hover .detail{
+	display: block;
+}
+#product li{
+	position: relative;
+}
+#product .detail{
+	width:100%;
+	height: 400px;
+	position: absolute;
+	left:0;
+	top:0;
+	background: rgba(0,0,0,.1);
+	display: none;
+}
+.detail .detail_more{
+	width:200px;
+	height:100px;
+	margin: 150px auto;
+}
+.detail_more span{
+	width: 200px;
+	display: block;
+	font:bold 20px/30px "微软雅黑";
+	color: orange;
+	text-align: center;
+	cursor:pointer;
+}
+.detail_more span:hover{
+	font-size: 30px;
+	/*color:lightcyan;*/
+}
+#product{
+	/*height:400px;*/
+	/*overflow: hidden;*/
+	height:500px;
+}
+#contact{
+	/*width:100%;*/
+	/*height:400px;*/
+}
+footer{
+	width: 100%;
+	height:100px;
+	background:lightcyan;
+	box-sizing: border-box;
+	padding-top:30px;
+	
+}
+footer p{
+	width:400px;
+	height:30px;
+	text-align: center;
+	margin:0 auto;
+	color:#A9A9A9;
+}
+#scrollbox{
+	width:20px;
+	height:100%;
+	background-color:rgba(0,0,0,.5);
+	position: fixed;
+	top:0;
+	right:0;
+}
+#scrollbox .scr_bar{
+	width:100%;
+	height:50px;
+	position: absolute;
+	background-color: orange;
+	border-radius: 10px;
+	cursor: pointer;
+}
+/*******作品弹窗部分样式*********/
+#probox{
+	width:100%;
+	height:auto;
+	background-color: rgba(0,0,0,.1);
+	/*position: fixed;*/
+	position: fixed;
+	left:0;
+	top:0;
+}
+#procont{
+	/*width:500px;*/
+	width: 60%;
+	max-width: 600px;
+	max-height: 600px;
+	overflow: hidden;
+	margin:20px auto;
+	position: relative;
+	border-radius: 30px;
+	/*border: 5px solid white;*/
+	background-color: lemonchiffon;
+	min-height: 600px;
+	box-shadow: 0 0 30px #000;
+	padding:40px;
+	box-sizing: border-box;
+}
+/*dl,dt,dd{
+	margin:0;padding: 0;
+}*/
+#procont dl{
+	margin-bottom: 20px;
+}
+#procont p{
+	padding:0 30px;
+	font:14px/20px "微软雅黑";
+	margin:5px 0;
+}
+#procont h6{
+	font:bold 16px/24px "微软雅黑";
+	margin:10px 0;
+	
+}
+#procont dt{
+	text-align: center;
+	font:bold 18px/24px "微软雅黑";
+	margin:15px 0;
+}
+#probox input,#godown,#goup{
+	width:80px;
+	height:80px;
+	border-radius:50%;
+	font:24px/50px arial;
+	border: 2px solid greenyellow;
+	background-color:rgba(0,0,0,0.6);
+	box-shadow: 0 0 10px #000;
+	color:white;
+	/*border: none;*/
+	position: absolute;
+	right:250px;
+	top:50px;
+	cursor:pointer;
+	z-index: 2;
+}
+#contact .con_cont{
+	width:100%;
+	transform-style: preserve-3d;
+	perspective: 800px;
+}
+.con_cont span{
+	/*float: left;*/
+	display: inline-block;
+	margin: 50px;
+}
+.cont_icn span{
+	cursor:pointer;
+}
+/*.cont_icn span:hover{
+	width:120px;
+	height:120px;
+	background-size: 120%;
+}*/
+.con_cont div{
+	width:100%;
+	/*display: inline-block;*/
+	margin:0 auto;
+	text-align: center;
+}
+.con_cont .cont_icn{
+	transform-origin: center center -200px;
+	position: relative;
+	/*transform: rotateY(20deg);*/
+}
+.con_cont p{
+	width:100%;
+	/*height:300px;*/
+	float: left;
+	background-color: chartreuse;
+	text-align: center;
+
+}
+.con_cont p span{
+	width:300px;
+	height:50px;
+	/*float: left;*/
+	margin: 0 ;
+	font:20px/50px "楷体";
+}
+.con_cont .tel{
+	background-position: -100px 0;
+}
+.con_cont .qq{
+	background-position: 0px -100px;
+	border-radius: 50%;
+}
+.con_icn_ative{
+	background-color:lightsalmon;
+	/*opacity: 0.3;*/
+}
+#godown,#goup{
+	position: absolute;
+	top:auto;
+	bottom:50px;
+	right:250px;
+	width:50px;
+	height:50px;
+	text-align: center;
+	border: 2px solid orange;
+	display: none;
+	z-index: 3;
+}
+#det_wrap{
+	position: relative;
+}
