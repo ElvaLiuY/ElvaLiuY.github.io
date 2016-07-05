@@ -5,7 +5,6 @@
 initData(datas);
 bindEvent();
 
-
 function bindEvent(){
 	$(".nav li").on("mouseover",function(){
 		$(".bottomLine").stop().animate({left:190+$(this).index()*87},300)

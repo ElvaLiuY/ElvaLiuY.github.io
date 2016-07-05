@@ -1,8 +1,8 @@
 $(function(){
     var mySwiper = new Swiper('.swiper-container',{
-        paginationClickable: true,
-        slidesPerView: 1,
-        mode: 'vertical',
+        paginationClickable: true,//f点击分页器指示灯可切换
+        slidesPerView: 1,//容器可容纳滑块个数
+        mode: 'vertical',//竖直
         onTouchEnd:function(){
       	var info = $(mySwiper.activeSlide()).find('.info');
         	var info1 = info.find('.info1');
@@ -30,7 +30,7 @@ $(function(){
       	},2600);
         }
     });
-    
+    /*********处理音乐播放开启和暂停****************/
     $('.music').on('touchstart',function(){
         if($(this).hasClass('on')){
             $('audio').get(0).pause();

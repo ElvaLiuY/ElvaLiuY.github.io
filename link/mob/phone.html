@@ -110,6 +110,11 @@
 				position: relative;
 				transform-origin: center center -2rem;
 			}
+			/*****
+			 * 这里采用LI 套一个.box 是个立体盒子，
+			 * div里面span和一个div
+			 * div{span+div{span+div{span+div{span+div}}}
+			 * ********/
 			.box div {
 				width: 4rem;
 				height: 100%;
@@ -152,10 +157,10 @@
 			window.onload=function() {
 				setLayout();
 				var list=id("imgList");
-				var boxs=list.getElementsByClassName("box");
-				var now=0;
+				var boxs=list.getElementsByClassName("box");//每个小格子盒子整体
+				var now=0;//mark翻转
 				var timer=0;
-				var off=false;
+				var off=false;//mark是否可以翻转，false可以翻转
 				$(list).swipeLeft(
 					function (){
 						if(off)
@@ -163,7 +168,7 @@
 							return;
 						}
 						off=true;
-						now++;
+						now++;//记录翻转次数的 左翻加1 右翻减1，根据它乘以90来翻转
 						var i=0;
 						clearInterval(timer);
 						timer=setInterval(
@@ -172,10 +177,10 @@
 								{
 									clearInterval(timer);
 								}
-								tabImg(i,-1);
+								tabImg(i,-1);//左侧翻转为负1， i为传入的rows行
 								i++;
 							},
-							30
+							30//相邻&同列的盒子，差30ms
 						);
 						tabNav();
 					}
@@ -196,7 +201,7 @@
 								{
 									clearInterval(timer);
 								}
-								tabImg(i,1);
+								tabImg(i,1);//右侧为1 
 								i++;
 							},
 							30
@@ -214,7 +219,7 @@
 							{
 								clearInterval(timer2);
 							}
-							if(rows==3 && start == end)
+							if(rows==3 && start == end)//最后一行，最后一个时
 							{
 								mTween(boxs[start],{rotateY:-90*now},600,"backOut",
 									function (){
@@ -226,9 +231,9 @@
 							{
 								mTween(boxs[start],{rotateY:-90*now},600,"backOut");
 							}
-							start+=dis;
+							start+=dis;//单行向左向右走
 						},
-						60
+						60//相邻&同行的翻转差30ms
 					);
 				}
 				function tabNav(){

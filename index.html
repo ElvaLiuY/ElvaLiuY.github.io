@@ -10,13 +10,16 @@
     <script type="text/javascript" defer="defer" src="js/index.js" ></script>
 </head>
 <body>
+	<!--home页   原本考虑做个页面跳转的网站，考虑到要展示的内容块不多，就整合在一页显示，定点滚动显示的形式展示-->
 	<div id="home">
+		<!--顶部-->
 		<header>
 			<div class="hhead">
 		    	<div class="topbox">
 			        <h1 class="fl">
 			        	<a href="#" title="ElvaLiuY.github.io">我的主页</a>
 			        </h1>
+			        <!--首屏导航部分-->
 			        <nav class="fr clearfix mainnav">
 			        	<!--此处原本要添加个切换效果，遇到点状况，时间急迫，再调吧！2016.6.25-->
 			            <div class="fl">
@@ -46,11 +49,13 @@
 			        </nav>
 		        </div>
 		    </div>
+		    <!--简单的图片切换-->
 		    <div id="hpic" class="clearfix">
 		    	<img src="image/2.jpg" />
 		   		<img src="image/curved.jpg" style="display: none;"/>
 		    </div>
 		</header>
+		<!--个人简历-->
 	    <section id="resume">
 	    	<header>
 	    		<h5 class="clearfix">
@@ -116,6 +121,9 @@
 	    		</div>
 	    	</div>
 	    </section>
+	    <!--作品展示部分
+	    	点击查看详情，生成弹窗，加载作品信息
+	    -->
 	    <section id="product">
 	    	<header>
 	    		<h5 class="clearfix">
@@ -159,7 +167,8 @@
 	    		</li>
 	    	</ul>
 	    </section>
-	    <section id="contact">
+	   <!--联系我-->
+	   <section id="contact">
 	    	<header>
 	    		<h5 class="clearfix">
 	    			<span class="line fl"></span>
@@ -188,6 +197,7 @@
 	   		</div>
 	    </section>
     </div>
+    <!--导航小点，点击会切换相应显示内容，这里加的滚动效果，同时滚动条联动-->
  	<div id="fixbox">
     	<span class="circle active"></span>
     	<span class="circle"></span>
