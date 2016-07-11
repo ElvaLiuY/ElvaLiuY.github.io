@@ -398,6 +398,10 @@ footer p{
 	left:0;
 	top:0;
 }
+#probox a{
+  text-decoration:underline;
+  color:blue;
+}
 #procont{
 	/*width:500px;*/
 	width: 60%;
