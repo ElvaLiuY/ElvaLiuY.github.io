@@ -14,7 +14,9 @@ var info=[[{
 		name:"回家gohome",
 		des:" 项目利用的移动端插件swiper，让代码写起来更简单，效果简洁流畅",
 		plink:"link/mob/gohome/index.html"
-	},{
+	},
+	/*
+	{
 		name:"定时器",
 		des:"手机设置定时器倒计时",
 		detail:["项目主要利用css3的transform 旋转，再加上巧妙布局（该处与十六宫格的核心部分布局一样，利用div span多层嵌套的，给一类标签添加样式）"],plink:"link/mob/countdown/index.html"
@@ -23,7 +25,7 @@ var info=[[{
 		des:"仿锤子手机十六宫格主题切换效果",
 		detail:["界面主要利用CSS3,进行了十六宫格布局，每个格子都是一个3D立体的盒子，每一面为要显示的图片","滑动切换时，给每个盒子相应旋转沿Y轴旋转正负90","为达到渐次翻转的效果，添加定时器，延时翻转","添加回弹动画效果"],
 		plink:"link/mob/phone.html"
-	}
+	}*/
 	],[{
 		name:"拼图游戏",
 		des:"简单的拼图小游戏",
