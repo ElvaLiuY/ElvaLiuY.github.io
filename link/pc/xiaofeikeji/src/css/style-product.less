@@ -1,0 +1,219 @@
+/* Import Less files */
+@import "lib-mixins";
+@import "lib-reset";
+@import "style-public";
+/* Import lib-rem.less if supportREM opened. */
+@import "lib-rem";
+.g-body{
+    width: 100%;
+    .m-img-container{
+        width:100%;
+    }
+}
+ .m-img-container{
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    .m-img{
+        position: absolute;
+        top:0;
+        right: 0;
+        width:100%;
+        height: 100%;
+        display: none;
+    }
+    .m-img1{
+        display: block;
+        background: url(../img/product/img-bg1.png) no-repeat;
+         background-size: cover;
+         .m-img-font-wrap{
+            width:400px;
+            padding: 30px 60px;
+             margin:0 auto;
+             position: relative;
+             top:25%;
+             p{
+                 width: 100%;
+                 color: #fff;
+                 font: 30px/50px "微软雅黑";
+                 text-align:justify; 
+                 text-align-last:justify;
+             }
+         }
+         img{
+             width:40%;
+             position: absolute;
+             bottom: 8%;
+             left: 30%;
+         }
+         .u-font-start{
+             display: block;
+             position: absolute;
+             top:-50px;
+             left:-30px;
+             width:210px;
+             height: 146px;
+             background: url(../img/product/f-start.png) no-repeat;
+             background-size: 80%;
+         }
+         .u-font-end{
+             display: block;
+             position: absolute;
+             right:0;
+             bottom:0;
+              width:145px;
+             height: 47px;
+             background: url(../img/product/f-end.png) no-repeat;
+             background-size: 80%;
+         }
+    }
+    .m-img2{
+         background: url(../img/product/img-bg2.png) no-repeat;
+         background-size: cover;
+         .m-img2-contanier{
+             position: relative;
+             top:15%;
+         }
+         .u-img-pie{
+             position: relative;
+             left:10%;
+             width:30%;
+             img{
+                 width:100%;
+             }
+         }
+         .u-img2-font{
+             position: relative;
+            padding-top:100px;
+             right:15%;
+             width:40%;
+             color:#fff;
+             p{
+                 strong{
+                     font:30px/50px "微软雅黑";
+                 }
+                 span{
+                     font:20px/50px "微软雅黑";
+                 }
+             }
+         }
+         .u-icn_full{
+             width:70%;
+             margin-bottom: 30px;
+         }
+    }
+    .m-img3{
+        background-color: #000;
+        text-align: center;
+        img{
+            animation:80s linear infinite;
+            animation-name: autoR;
+        }
+        .u-img-font{
+            margin:0 auto;
+            position: relative;
+            top:16%;
+            z-index: 10;
+            width:472px;
+            height:40px;
+            background: url(../img/product/img-font3.png) no-repeat;
+            background-size: 90%;
+        }
+    }
+}
+.m-pro-container{
+    display: none;
+    .m-pro-head{
+        box-sizing: border-box;
+        width:100%;
+        height: 140px;
+        padding-top: 40px;
+    }
+}
+ .m-pro-head{
+    a{
+        font:20px/30px "微软雅黑";
+        padding:12px 10px;
+        border-bottom: 4px solid #fff;
+        margin-right: 20px;
+    }
+    .z-a-active{
+        color: #27b2c9;
+        border-color: #27b2c9;
+    }
+    .zactive{
+        color: #27b2c9;
+        border-color: #27b2c9;
+    }
+}
+.m-pro-wrap{
+//  display: none;
+    li{
+        float: left;
+        width:30%;
+        margin-right: 3%;
+        margin-bottom: 3%;
+        img{
+            width: 100%;
+        }
+    }
+    margin-bottom:30px;
+    
+}
+@keyframes autoR{
+    0%{transform:rotate(0) scale(1);}
+    50%{transform:rotate(180deg) scale(1.5);}
+    100%{transform:rotate(360deg) scale(1);}
+}
+
+.m-containner-wrap{
+    width: 900px;
+    margin:0 auto 30px;
+    position: relative;
+}
+.m-containner-wrap {
+    .swiper-button-prev,
+    .swiper-button-next{
+        width: 80px;
+        height: 80px;
+        background: #28b1c9;
+        margin-top:-40px;
+    }  
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover{
+        background: rgba(0,0,0,0.7);
+//      background: url(../img/intro/b-btn-bg.png) no-repeat;
+//      background-size: cover;
+    }
+    .swiper-button-prev{
+        left:-120px;
+    }
+    .swiper-button-next{
+        right:-100px;
+    }
+}
+.u-right,.u-left{
+    display: block;
+    width:24px;
+    height: 43px;
+    margin:0 auto;
+    position: relative;
+    top:18px;
+}
+.u-right{
+     background-image: url(../slice/fonticn/icn-right.png);
+}
+.u-left{
+     background-image: url(../slice/fonticn/icn-left.png);
+}
+.u-btn-down{
+    display: block;
+    width:34px;
+    height: 34px;
+    position: absolute;
+    bottom:30px;
+    right:50px;
+    background: url(../img/product/btn-down.png) no-repeat;
+    cursor: pointer;
+    background-size:cover;
+}
