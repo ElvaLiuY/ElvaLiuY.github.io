@@ -1,0 +1,63 @@
+/* Import Less files */
+@import "lib-mixins";
+@import "lib-reset";
+@import "style-public";
+/* Import lib-rem.less if supportREM opened. */
+@import "lib-rem";
+.g-body{
+    width:100%;
+    background: url(../img/download/bg-download.png) ;
+    background-size: cover;
+    .m-img-wrap{
+        width:800px ;
+        margin:0 auto;
+        position: relative;
+        top:15%;
+        .m-img-left{
+//           width:30%;
+        }
+        img{
+//         width:100%;
+            width:240px;
+        }
+        .m-img-right{
+            p{
+                font:30px/50px "微软雅黑";
+                color: #Fff;
+                margin:100px 100px 60px;
+            }
+            .u-font-des{
+                font-size: 20px;
+            }
+        }
+    }
+    .u-img-code{
+        width:200px;
+        height:200px;
+        position: relative;
+        img{
+            width:100%;
+            position: absolute;
+            top:0;
+            left: 0;
+        }
+    }
+    .u-down-wrap{
+        margin:50px 50px 50px 90px;
+    }
+    .u-down{
+        display: block;
+       width:200px;
+        height:60px;
+        cursor: pointer;
+    }
+    .u-ad{
+
+        background: url(../img/download/Android.png) no-repeat;
+        background-size: 100%;
+    }
+     .u-ios{
+        background: url(../img/download/ios.png) no-repeat;
+        background-size: 100%;
+    }
+}

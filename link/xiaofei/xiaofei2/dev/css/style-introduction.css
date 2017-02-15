@@ -1,0 +1,1247 @@
+/* Import Less files */
+
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8+, and Opera
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+input {
+  outline: none;
+}
+
+.z-comwid {
+  width: 66%;
+  min-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  width: 100%;
+  min-width: 1200px;
+  font-size: 12px;
+  font-family: "微软雅黑";
+}
+
+.g-head {
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1000;
+}
+
+.g-head .m-logo {
+  position: relative;
+  width: 50px;
+  height: 0px;
+  padding-top: 40px;
+  background: url(../img/index/log.png) no-repeat;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.g-head .m-logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 40px;
+}
+
+.g-head .m-logo:hover {
+  cursor: pointer;
+}
+
+.m-nav li {
+  position: relative;
+}
+
+.m-nav a {
+  float: left;
+  color: #7e7e7e;
+  text-align: center;
+}
+
+.m-nav span {
+  font: 14px/20px "微软雅黑";
+}
+
+.m-nav .m-subnav {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+}
+
+.m-nav .z-nav-a {
+  box-sizing: border-box;
+  width: 90px;
+  height: 80px;
+  margin: 0 10px;
+  padding-top: 30px;
+}
+
+.m-nav .z-subnav-a {
+  width: 120px;
+  padding: 10px 0;
+}
+
+.m-nav .z-nav-active {
+  background-color: #29b1c9;
+  color: #fff;
+}
+
+.g-foot {
+  width: 100%;
+  height: 465px;
+  background-color: #252525;
+}
+
+.g-foot .m-contact {
+  height: 378px;
+  color: #fff;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 96px;
+}
+
+.g-foot .m-foot {
+  width: 100%;
+  height: 80px;
+  background-color: #1a1a1a;
+}
+
+.m-cont-left {
+  width: 20%;
+}
+
+.m-cont-left .u-name {
+  font: 24px/30px "微软雅黑";
+  margin-bottom: 60px;
+}
+
+.m-cont-left .u-tel {
+  font: 12px/24px "微软雅黑";
+}
+
+.m-cont-right {
+  width: 60%;
+}
+
+.m-cont-right .u-cont-font {
+  font: 18px/22px "微软雅黑";
+  margin-bottom: 30px;
+}
+
+.m-cont-right p {
+  font: 12px/24px "微软雅黑";
+  margin-bottom: 32px;
+}
+
+.m-mail {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.m-mail .u-input-email {
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+}
+
+.m-mail .u-btn-send {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #252525;
+  background-color: #fff;
+}
+
+.m-foot p {
+  text-align: left;
+  height: 80px;
+  margin: 0 auto;
+  padding-top: 30px;
+  box-sizing: border-box;
+  font: 12px/20px "微软雅黑";
+  color: #cccccc;
+}
+
+.m-foot p a {
+  color: #cccccc;
+}
+
+.z-center {
+  text-align: center;
+}
+
+.g-fl {
+  float: left;
+}
+
+.g-fr {
+  float: right;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  zoom: 1;
+  /* IE < 8 */
+}
+
+.z-block-active {
+  display: block !important;
+}
+
+.z-block-disactive {
+  display: none;
+}
+
+/* spacing helpers
+p,m = padding,margin
+a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
+s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
+*/
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.ptn,
+.pvn,
+.pan {
+  padding-top: 0px !important;
+}
+
+.pts,
+.pvs,
+.pas {
+  padding-top: 5px !important;
+}
+
+.ptm,
+.pvm,
+.pam {
+  padding-top: 10px !important;
+}
+
+.ptl,
+.pvl,
+.pal {
+  padding-top: 20px !important;
+}
+
+.prn,
+.phn,
+.pan {
+  padding-right: 0px !important;
+}
+
+.prs,
+.phs,
+.pas {
+  padding-right: 5px !important;
+}
+
+.prm,
+.phm,
+.pam {
+  padding-right: 10px !important;
+}
+
+.prl,
+.phl,
+.pal {
+  padding-right: 20px !important;
+}
+
+.pbn,
+.pvn,
+.pan {
+  padding-bottom: 0px !important;
+}
+
+.pbs,
+.pvs,
+.pas {
+  padding-bottom: 5px !important;
+}
+
+.pbm,
+.pvm,
+.pam {
+  padding-bottom: 10px !important;
+}
+
+.pbl,
+.pvl,
+.pal {
+  padding-bottom: 20px !important;
+}
+
+.pln,
+.phn,
+.pan {
+  padding-left: 0px !important;
+}
+
+.pls,
+.phs,
+.pas {
+  padding-left: 5px !important;
+}
+
+.plm,
+.phm,
+.pam {
+  padding-left: 10px !important;
+}
+
+.pll,
+.phl,
+.pal {
+  padding-left: 20px !important;
+}
+
+.mtn,
+.mvn,
+.man {
+  margin-top: 0px !important;
+}
+
+.mts,
+.mvs,
+.mas {
+  margin-top: 5px !important;
+}
+
+.mtm,
+.mvm,
+.mam {
+  margin-top: 10px !important;
+}
+
+.mtl,
+.mvl,
+.mal {
+  margin-top: 20px !important;
+}
+
+.mrn,
+.mhn,
+.man {
+  margin-right: 0px !important;
+}
+
+.mrs,
+.mhs,
+.mas {
+  margin-right: 5px !important;
+}
+
+.mrm,
+.mhm,
+.mam {
+  margin-right: 10px !important;
+}
+
+.mrl,
+.mhl,
+.mal {
+  margin-right: 20px !important;
+}
+
+.mbn,
+.mvn,
+.man {
+  margin-bottom: 0px !important;
+}
+
+.mbs,
+.mvs,
+.mas {
+  margin-bottom: 5px !important;
+}
+
+.mbm,
+.mvm,
+.mam {
+  margin-bottom: 10px !important;
+}
+
+.mbl,
+.mvl,
+.mal {
+  margin-bottom: 20px !important;
+}
+
+.mln,
+.mhn,
+.man {
+  margin-left: 0px !important;
+}
+
+.mls,
+.mhs,
+.mas {
+  margin-left: 5px !important;
+}
+
+.mlm,
+.mhm,
+.mam {
+  margin-left: 10px !important;
+}
+
+.mll,
+.mhl,
+.mal {
+  margin-left: 20px !important;
+}
+
+/* reset */
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+[hidefocus],
+summary {
+  outline: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+
+sup,
+sub {
+  font-size: 83%;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+
+q:before,
+q:after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label,
+summary {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  background: #fff;
+}
+
+a,
+a:hover {
+  color: #333;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.z-dis-none {
+  display: none;
+}
+
+/* Import lib-rem.less if supportREM opened. */
+
+html {
+  font-size: 20PX;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 19PX !important;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  html {
+    font-size: 20PX !important;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  html {
+    font-size: 21.33333333PX !important;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  html {
+    font-size: 22.08PX !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 25.6PX !important;
+  }
+}
+
+html[data-rem="320"] {
+  font-size: 20PX;
+}
+
+@media only screen and (min-width: 375px) {
+  html[data-rem="320"] {
+    font-size: 23.4375PX !important;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  html[data-rem="320"] {
+    font-size: 25PX !important;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  html[data-rem="320"] {
+    font-size: 25.875PX !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  html[data-rem="320"] {
+    font-size: 30PX !important;
+  }
+}
+
+.g-head-img img {
+  width: 100%;
+  height: 300px;
+}
+
+.g-body {
+  width: 100%;
+  height: auto;
+}
+
+.g-body .m-idea header {
+  color: #fff;
+  background: url(../img/intro/b-img2.png) no-repeat center 100%;
+}
+
+.g-body .m-intro header,
+.g-body .m-foot-banner header {
+  color: #000000;
+}
+
+.g-body .m-intro header span,
+.g-body .m-foot-banner header span {
+  background-color: #29b1c9;
+}
+
+.m-intro header,
+.m-idea header,
+.m-foot-banner header {
+  width: 100%;
+  height: 150px;
+  font: 20px/30px "微软雅黑";
+  padding-top: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.m-intro header span,
+.m-idea header span,
+.m-foot-banner header span {
+  display: block;
+  margin: 0 auto;
+  width: 26px;
+  height: 4px;
+  background-color: white;
+}
+
+.m-intro header h5,
+.m-idea header h5,
+.m-foot-banner header h5 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.m-intro-cont,
+.m-idea-cont {
+  font: 14px/30px "微软雅黑";
+  position: relative;
+  padding: 50px;
+  box-sizing: border-box;
+  margin-bottom: 60px;
+}
+
+.m-intro-cont p,
+.m-idea-cont p {
+  text-indent: 2em;
+  /*em是相对单位，2em即现在一个字大小的两倍*/
+}
+
+.m-intro-cont span,
+.m-idea-cont span {
+  display: block;
+  width: 93px;
+  height: 53px;
+  position: absolute;
+  transform: scale(0.8);
+}
+
+.z-font-start {
+  background-image: url(../slice/fonticn/f-start.png);
+  top: 0;
+  left: 0;
+}
+
+.z-font-end {
+  right: 0;
+  bottom: 0;
+  background-image: url(../slice/fonticn/f-end.png);
+}
+
+.m-foot-banner {
+  background-color: #f7f7f7;
+  padding-bottom: 100px;
+}
+
+#myswiper {
+  width: 880px;
+  margin: 0 auto;
+}
+
+#myswiper .swiper-slide {
+  width: 200px;
+}
+
+#myswiper img {
+  width: 200px;
+  height: 290px;
+}
+
+.m-containner-wrap {
+  width: 880px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.m-containner-wrap .swiper-button-prev,
+.m-containner-wrap .swiper-button-next {
+  width: 80px;
+  height: 80px;
+  background: #28b1c9;
+  margin-top: -40px;
+}
+
+.m-containner-wrap .swiper-button-prev:hover,
+.m-containner-wrap .swiper-button-next:hover {
+  background: url(../img/intro/b-btn-bg.png) no-repeat;
+  background-size: cover;
+}
+
+.m-containner-wrap .swiper-button-prev {
+  left: -120px;
+}
+
+.m-containner-wrap .swiper-button-next {
+  right: -100px;
+}
+
+.m-foot-bannerwrap {
+  width: 880px;
+}
+
+.u-right,
+.u-left {
+  display: block;
+  width: 24px;
+  height: 43px;
+  margin: 0 auto;
+  position: relative;
+  top: 18px;
+}
+
+.u-right {
+  background-image: url(../slice/fonticn/icn-right.png);
+}
+
+.u-left {
+  background-image: url(../slice/fonticn/icn-left.png);
+}

@@ -1,0 +1,74 @@
+/* Import Less files */
+@import "lib-mixins";
+@import "lib-reset";
+@import "style-public";
+/* Import lib-rem.less if supportREM opened. */
+@import "lib-rem";
+
+.m-map{
+    height:300px;
+    width: 100%;
+}
+.m-contact header{
+ width:100%;
+     height: 150px;
+    font:20px/30px "微软雅黑";
+    padding-top:50px;
+    box-sizing: border-box;
+    text-align: center;
+    span{
+        display: block;
+        margin:0 auto;
+        width:26px;
+        height: 4px;
+        background-color: #28B1C9;
+    }
+    h5{
+        margin:0;
+        margin-bottom: 10px;
+        
+    }
+}
+.m-contact-wrap{
+    height: 400px;
+    .m-contact-left,
+    .m-contact-right{
+        width:50%;
+        height:100%;
+        float: left;
+        p{
+//          width:300px;
+            width:33%;
+            min-width: 480px;
+            font:12px/24px "微软雅黑";
+            color: #fff;
+            text-align: left;
+            box-sizing: border-box;
+        }
+         strong{
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+    }
+    .m-contact-left{
+        position: relative;
+        img{
+            width: 100%;
+            height:100%;
+        }
+        p{
+            position: absolute;
+            top:100px;
+           right:0;
+        }
+       
+    }
+    .m-contact-right{
+        background-color: #28B1C9;
+        p{
+            margin:100px;
+            text-align: left;
+        }
+    }
+}

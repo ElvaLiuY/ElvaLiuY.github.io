@@ -1,0 +1,141 @@
+/* Import Less files */
+@import "lib-mixins";
+@import "lib-reset";
+@import "style-public";
+/* Import lib-rem.less if supportREM opened. */
+@import "lib-rem";
+.g-head-img{
+    img{
+        width:100%;
+        height:300px;
+    }
+
+
+}
+.g-body{
+    width: 100%;
+    height: auto;
+    .m-idea{
+         header{
+          color: #fff;
+          background: url(../img/intro/b-img2.png) no-repeat center 100%;
+        }
+    }
+    .m-intro header,.m-foot-banner header{
+        color: #000000;
+        span{
+             background-color: #29b1c9;
+        }
+    }
+
+}
+.m-intro header,
+.m-idea header,
+.m-foot-banner header{
+     width:100%;
+     height: 150px;
+    font:20px/30px "微软雅黑";
+    padding-top:50px;
+    box-sizing: border-box;
+    text-align: center;
+    span{
+        display: block;
+        margin:0 auto;
+        width:26px;
+        height: 4px;
+        background-color: white;
+    }
+    h5{
+        margin:0;
+        margin-bottom: 10px;
+        
+    }
+}
+.m-intro-cont,.m-idea-cont{
+    font:14px/30px "微软雅黑";
+    position: relative;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 60px;
+    p{
+        text-indent: 2em; /*em是相对单位，2em即现在一个字大小的两倍*/
+    }
+    span{
+        display: block;
+        width:93px ;
+         height: 53px;
+        position: absolute;
+        transform: scale(0.8);
+    }
+}
+.z-font-start{
+
+    background-image: url(../slice/fonticn/f-start.png);
+    top:0;
+    left:0;
+}
+.z-font-end{
+    right: 0;
+    bottom: 0;
+    background-image: url(../slice/fonticn/f-end.png);
+
+}
+.m-foot-banner{
+    background-color: #f7f7f7;
+    padding-bottom: 100px;
+}
+#myswiper{
+    width:880px;
+    margin: 0 auto;
+    .swiper-slide{
+        width: 200px;
+    }
+    img{
+        width: 200px;
+        height: 290px;
+    }
+    
+}
+.m-containner-wrap{
+    width: 880px;
+    margin:0 auto;
+    position: relative;
+}
+.m-containner-wrap {
+    .swiper-button-prev,
+    .swiper-button-next{
+        width: 80px;
+        height: 80px;
+        background: #28b1c9;
+        margin-top:-40px;
+    }  
+    .swiper-button-prev:hover,
+    .swiper-button-next:hover{
+//      background: rgba(0,0,0,0.7);
+        background: url(../img/intro/b-btn-bg.png) no-repeat;
+        background-size: cover;
+    }
+    .swiper-button-prev{
+        left:-120px;
+    }
+    .swiper-button-next{
+        right:-100px;
+    }
+}
+.m-foot-bannerwrap{
+    width:880px;
+}
+.u-right,.u-left{
+    display: block;
+    width:24px;
+    height: 43px;
+    margin:0 auto;
+    position: relative;
+    top:18px;
+}
+.u-right{
+     background-image: url(../slice/fonticn/icn-right.png);
+}
+.u-left{
+     background-image: url(../slice/fonticn/icn-left.png);
+}
