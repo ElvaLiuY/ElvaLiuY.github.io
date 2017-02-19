@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<title>小飞科技</title>
+<link rel="stylesheet" type="text/css" href="./css/base.css">
+<link rel="stylesheet" type="text/css" href="./css/index.css">
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="shortcut icon" href="./images/ico/64X64.ico">
+
+</head>
+<body>
+<div class="section">
+	<!--头部-->
+	<div class='headers'>
+		<div class='w1359'>
+			<img src='./images/logo.png'>
+			<ul class="Ul">
+				<li ><a href="index.html">首页</a></li>
+				
+				<li ><a href="service.html">小飞服务</a> </li>
+				
+				<li class="Index"><a href="javascript:;">小飞方案</a> </li>
+				
+				<li><a href="join.html">加入小飞</a> </li>
+				
+				<li class="bor0 pr0"><a href="download_page.html">小飞下载</a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+	<!--内容-->
+	<header class="htmleaf-header">
+		<div class="content">
+			<div id="logo">
+				<p class="color-1" id="color-1">节能一体化快充解决方案</p>
+				<p class="color-2" id="color-2">“互联网＋”综合物流解决方案</p>
+			</div>
+			<h1></h1>
+		<div>
+	</header>
+	<!--尾部-->
+	<div class="footer-sec">
+		<div class="click">
+			
+			<div class="bei">				<p>Copyright 2015www.xiaofeikeji.com 版权所有 All Rights Reserved.<a href="http://www.miitbeian.gov.cn" target='_blank' class="footlink"> 京ICP备 15045145号-2</a></p>			</div>			<div style="width:300px;margin:0 auto; padding:5px 0; font-size: 12px;">				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802021646" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">				<img src="images/ba_icn.png" style="float:left;"/>				<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;font-family: 'Microsoft Yahei', tahoma, arial, 宋体, sans-serif;">京公网安备 11010802021646号</p></a>			</div>
+
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mkinfinite.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('header').mkinfinite({
+		maxZoom:       1.4,
+		animationTime: 4000,
+		imagesRatio:   (1920/ 1080),
+		isFixedBG:     true,
+		zoomIn:        true,
+		imagesList:    new Array(
+			'images/scheme-img/f1.jpg',
+			'images/scheme-img/f2.jpg'
+			
+		)
+	});		
+	setTimeout("$('#color-2').fadeIn(4000); ",4000);
+	$("#color-1").animate({margin:'30px'},4000);
+});
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>

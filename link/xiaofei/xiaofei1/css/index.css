@@ -1,0 +1,330 @@
+/*------header------*/
+.header {
+  width: 100%;
+  height: 100%;
+  background: url("../images/tkbg.jpg") no-repeat;
+  position: fixed;
+  top: 0;
+  background-size: 100% 100%;
+}
+
+
+.content {
+  height: 100%;
+}
+
+.whiteCloud {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.headers {
+  width: 100%;
+  height: 58px;
+  background: #fff;
+  z-index: 100;
+  border-bottom: 1px solid rgba(196, 196, 196, 0.32);
+  position: fixed;
+  top: 0;
+  min-width: 1200px;
+}
+
+.w1359 {
+  margin: auto;
+  width: 1060px;
+  margin-top: 7px;
+}
+
+/*------header---end----*/
+/*------screen-----*/
+.nav {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  position: relative;
+}
+
+.nav-con {
+	width: 23%;
+	height: 57%;
+  background: url(../images/car.png) no-repeat;
+  background-size: 100%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.section3 .nav-con {
+  width: 35%;
+  background: url(../images/zhuang.png) no-repeat;
+  background-size: 100%;
+}
+
+.section4 .nav-con {
+  width: 35%;
+  background: url(../images/CD.png) no-repeat;
+  background-size: 100%;
+}
+
+.footerba {
+  width: 100%;
+  height: 95%;
+  background: url(../images/footerBg.jpg) no-repeat;
+  background-size: 100%;
+  position: relative;
+      /*margin-top: 93px;*/
+	background-position: 0 99%;
+}
+
+.footer {
+  width: 100%;
+  height: 87%;
+  background: #097f33;
+}
+
+.text-footer {
+  width: 100%;
+  height: 15%;
+  background: url(../images/xian.png) no-repeat;
+  position: absolute;
+  bottom: 15%;
+  text-align: center;
+  background-size: 100%;
+}
+
+.En {
+  text-align: center;
+  font-size: 42px;
+  line-height: 88px;
+  color: #dcffe0;
+  font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+
+.footer-back {
+  background: #2c2c2c;
+  width: 100%;
+  height: 100%;
+}
+
+.ContactCon {
+  width: 1200px;
+  margin: auto;
+}
+
+.sec {
+  background: url("../images/weix1280.png") no-repeat;
+  padding: 0px 45px;
+  color: #e8ffe1;
+  line-height: 20px;
+  position: relative;
+  font-size:14px; 
+   font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+.sec em {
+  display: inline-block;
+  width: 77%;
+  height: 976%;
+  background: url("../images/erweima.png") no-repeat;
+  position: absolute;
+  top: -214px;
+  left: 0;
+  background-size: 100%;
+  font-size: 20px;
+}
+
+.e-m {
+  background: url("../images/E-mail1280.png") no-repeat;
+  padding: 0px 45px;
+  color: #e8ffe1;
+  line-height: 20px;
+  font-size:14px; 
+  font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+
+.click {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 1000;
+}
+.w1359 ul {
+  width: 60%;
+  height: 66%;
+  float: right;
+}
+.w1359 ul li {
+  float: left;
+  display: inline-block;
+  margin: 1.2% 1% 0 5%;
+}
+.w1359 ul li.Index {
+
+  padding: 0;
+}
+.w1359 ul li.Index a {
+  color: #0052a5;
+  
+}
+.w1359 ul li.fg {
+  width: 1px;
+    height: 14px;
+    padding: 0;
+    margin-top: 3.5%;
+    background-color: #959595;
+}
+.w1359 ul li a {
+  color: #323232;
+   font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+   font-size: 18px;
+}
+.w1359 ul li a:hover {
+  color: #0052a5;
+}
+.w1359 img{float: left;}
+.mr223 {
+  margin-right: 223px !important;
+}
+
+.ml133 {
+  margin-left: 133px !important;
+}
+
+.bei{    
+  width: 50%;
+  margin: auto;
+}
+.bei p{
+  color: #959595;
+  text-align: center;
+  padding: 8px;
+  font-size:12px;
+ font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+/*------screen---end----*/
+/*------service-----*/
+.section {
+  position: relative;
+  overflow: hidden;
+  min-width: 1400px;
+  height: 100%;
+  }
+.nav-ser{
+  width: 100%;
+  height: 100%;
+  background: url("../images/service-img/mainbg.jpg") no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.click{
+      background: #2c2c2c;
+      padding-top:10px;
+}
+.nav-con-ser{
+  width: 51%;
+  height: 69%;
+  background: url("../images/service-img/main.png") no-repeat;
+  background-size: 100%;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.mt16{
+  margin-top: 16px!important;
+}
+/*------scheme-----*/
+.w100{width: 100%;height: 100%;}
+/*------scheme---end----*/
+/*------join-----*/
+
+
+/*------join---end----*/
+/*------download-----*/
+.con-dow  {
+  width: 50%;
+  height: 65%;
+  /*background: #f00;*/
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+.cellphone{
+  width: 53%;
+  height: 100%;
+  background:url('../images/download-img/iphone.png') no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.icon{
+  width: 39%;
+height: 100%;
+  /*background:#000;*/
+  background:url('../images/download-img/loadtext.png') no-repeat;
+  text-align: center;
+  background-size: 100%;
+}
+.ico{
+  display: inline-block;
+ width: 33%;
+height: 69%;
+  
+  background-size: 100%;
+}
+.li-ico{
+  width: 100%;
+  height: 100%;
+  margin:auto;
+}
+.rent-font{
+  font-size: 24px;
+  color: #557e54;
+  font-weight:bold;
+  font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+.font{
+  border-bottom:1px solid #dbe6ec;
+  width: 90%;
+  margin: 14px auto;
+  padding-bottom: 10px; 
+}
+.An-font{
+  font-size: 16px;
+}
+.system-font{
+  border-bottom:0;
+  color: #60676f;
+  font-size: 20px;
+  font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+.system{
+  width: 100%;
+  height: 48%;
+  margin-top: 10px;
+}
+
+.two-dim-code{
+  width: 50%;
+  height: 78%;
+  background: url('../images/download-img/twoma.jpg') no-repeat;
+  background-size: 100%;
+  margin: 17px auto;
+}
+.code{
+  color: #293a4e;
+  font-size: 20px;
+  font-family: 'Microsoft Yahei',tahoma,arial,'宋体',sans-serif;
+}
+/*------download--end---*/

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/base.css">
+<link rel="shortcut icon" href="./images/ico/64X64.ico">
+
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+        <title>小飞科技</title>
+        <!--背景css-->
+        <style type="text/css">
+        * { margin: 0; padding: 0; border: 0; } 
+	        html,body{
+	        	margin: 0;
+	        }
+	        @-webkit-keyframes STAR-MOVE {
+				from {
+					background-position:0% 0%
+				}
+				to { 
+					background-position: 600% 0%
+				}
+			}
+			 @keyframes STAR-MOVE {
+				from {
+					background-position: 0% 0%
+				}
+				to { 
+					background-position: 600% 0%
+				}
+			}
+			.wall{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				
+			}
+			
+			div#midground{
+				background:url('images/download-img/midground.png')repeat 20% 0%;
+				z-index: 1;
+				-webkit-animation: STAR-MOVE  100s linear infinite;
+				-moz-animation: STAR-MOVE  100s linear infinite;
+				-ms-animation: STAR-MOVE  100s linear infinite;
+				animation: STAR-MOVE  100s linear infinite;
+			}
+			
+
+        </style>
+        <!--背景css-end-->
+    </head>
+<body>
+
+<div class="section">
+
+	<!--头部-->
+	<div class='headers'>
+		<div class='w1359'>
+			<img src='./images/logo.png'>
+			<ul class="Ul">
+				<li ><a href="index.html">首页</a></li>
+				
+				<li class="Index"><a href="javascript:;">小飞服务</a> </li>
+				
+				<li><a href="scheme.html">小飞方案</a> </li>
+				
+				<li><a href="join.html">加入小飞</a> </li>
+				
+				<li class="bor0 pr0"><a href="download_page.html">小飞下载</a></li>
+				<div class="clear"></div>
+			</ul>
+		</div>
+	</div>
+	<!--背景-->
+        <div id="background" class="wall"></div>
+        <div id="midground" class="wall"></div>
+        <div id="foreground" class="wall"></div>
+		<!--背景-end-->
+	<!--内容-->
+	<div class="nav-ser">
+		<p class="nav-con-ser">
+
+		</p>
+	</div>
+	<!--尾部-->
+	<div class="footer-ser">
+		<div class="click">
+			
+			<div class="bei">				<p>Copyright 2015www.xiaofeikeji.com 版权所有 All Rights Reserved.<a href="http://www.miitbeian.gov.cn" target='_blank' class="footlink"> 京ICP备 15045145号-2</a></p>			</div>			<div style="width:300px;margin:0 auto; padding:5px 0; font-size: 12px;">				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802021646" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">				<img src="images/ba_icn.png" style="float:left;"/>				<p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;  font-size: 12px;font-family: 'Microsoft Yahei', tahoma, arial, 宋体, sans-serif;">京公网安备 11010802021646号</p></a>			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

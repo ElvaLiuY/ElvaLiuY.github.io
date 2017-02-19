@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="x5-orientation" content="portrait">
+<meta name="screen-orientation"content="portrait">
+<meta name="x5-fullscreen" content="true">
+<meta name="full-screen" content="yes">
+ <title>小飞快充</title>
+ <!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+ <link rel="stylesheet" href="css/reset.css" />
+ <link rel="stylesheet" href="css/swiper-3.4.0.min.css" />
+ <link rel="stylesheet" href="css/index.css" />
+ <script src="js/zepto.min.js"></script>
+ <script src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/swiper-3.4.0.min.js" ></script>
+<script src="js/jobinfo.js"></script>
+	<script>
+		setSize();
+		window.addEventListener("resize",setSize,false);
+		window.addEventListener("orientationchange",setSize,false);
+		function setSize()
+		{
+			var oHtml=document.getElementsByTagName("html")[0];
+			var iWidth=oHtml.getBoundingClientRect().width;
+			oHtml.style.fontSize=iWidth/16+"px";
+		}
+		
+	</script>
+</head>
+<body>
+<section class="swiper-container">
+	<div class="swiper-wrapper">
+	 <div class="swiper-slide  swiper-slide-visible swiper-slide-active n1" >
+	 	<div class="info">
+	 		<div class="info1 logo"></div>
+	 		<div class="cont_box">
+		 		<div class="info3 desp">
+		 			<span class="find_icn"></span>
+		 			<span class="find_car"></span>
+		 		</div>
+		 		<div class="info2">
+		 			<div class="yun"></div>
+		 			<img class="car" src="img/findcar/icn_car.png"></img>
+		 		</div>
+	 		</div>
+	 	</div>
+	 </div>
+	 <div class="swiper-slide n2">
+		 <div class="info">
+		 	<div class="cont_box">
+		 		<div class="info3 desp">
+		 			<span class="find_icn"></span>
+		 			<span class="find_pile"></span>
+		 			<!--<p>
+		 				<span class="future">未来会：</span>
+		 				<span class="f_font2">五分钟找到充电桩</span>
+		 			</p>-->
+		 		</div>
+		 		<div class="info2">
+		 			<div class="yun2"></div>
+		 			<img class="car" src="img/findcar/icn_pile.png"></img>
+		 		</div>
+	 		</div>
+		 </div>
+	 </div>
+	 <div class="swiper-slide n3">
+		 <div class="info">
+			<div class="cont_box">
+		 		<div class="info3 desp">
+		 			<span class="find_icn"></span>
+		 			<span class="icn_full"></span>
+		 		</div>
+		 		<div class="info2">
+		 			<div class="yun"></div>
+		 			<img class="car" src="img/full.png"></img>
+		 		</div>
+	 		</div>
+		 </div>
+	 </div>
+	 <div class="swiper-slide n4">
+		 <div class="info">
+			<div class="cont_box">
+		 		<div class="info3 desp">
+		 			<span class="icn_fast"></span>
+		 			<span class="icn_base"></span>
+		 		</div>
+		 		<div class="info2">
+		 			<div class="yun"></div>
+		 			<img class="car" src="img/findcar/statpos.png"></img>
+		 		</div>
+	 		</div>
+		 </div>
+	 </div>
+	 <div class="swiper-slide n5">
+		 <div class="info">
+		 	<div class="cont_box">
+				<div class="info3 desp">
+		 			<span class="icn_service"></span>
+		 			<span class="icn_ser2"></span>
+		 			<div class="icn_cicle"></div>
+		 		</div>
+		 		<div class="info2">
+		 			<!--<div class="yun"></div>
+		 			<img class="car" src="img/findcar/statpos.png"></img>-->
+
+		 			<img src="img/bg_ser.png" />
+		 		</div>
+		 	</div>
+		 </div>
+	 </div>
+	 <div class="swiper-slide n6" >
+		 <div class="info ">
+		 	<div class="info3 sch_font  center">
+		 		<span class="sch_font1"></span>
+		 		<span class="sch_font2"></span>
+		 	</div>
+		 	<div class="info1 sch1  center">
+		 		<span class='icn_sch1'></span>
+		 		<img src="img/icn_scheme1.png"/>
+
+		 	</div>
+		 	<div class="info2 sch2 center ">
+		 		<span class='icn_sch2'></span>
+		 		<img src="img/icn_scheme2.png"/>
+
+		 	</div>
+		 </div>
+	 </div>
+	 <div class="swiper-slide n7" >
+		 <div class="info">
+			<div class="cont_box">
+				<div class="info2 join1 desp">
+					<span class="icn_join"></span>
+			 		<span class="icn_join2"></span>
+				</div>
+				<!--<div class="info1 join2 center">
+					<img src="img/job.png" />
+				</div>
+				<div class="info2 join3 center">-->
+					<!--<p>
+						<span flagid="0">单片机高级开发工程师</span>
+						<span flagid="1">硬件研发工程师</span>
+						<span flagid="2">java开发工程师</span>
+					</p>
+					<p>
+						<span flagid="3">AQ测试工程师</span>
+						<span flagid="4">网络/运维</span>
+						<span flagid="5">商务专员</span>
+					</p>
+					<p><span flagid="6">市场专员</span></p>-->
+					<!--<div id="joblist">
+						<span flagid="0">单片机高级开发工程师</span>
+						<span flagid="1">硬件研发工程师</span>
+						<span flagid="2">java开发工程师</span>
+						<span flagid="3">AQ测试工程师</span>
+						<span flagid="4">网络/运维</span>
+						<span flagid="5">商务专员</span>
+						<span flagid="6">市场专员</span>
+					</div>-->
+				<div class="job_wrap info1">
+					<div class="center">
+						<img  class="jobimg" src="img/job/12.png"/>
+						<span flagid="0">单片机高级开发工程师</span>
+						<span flagid="1">硬件研发工程师</span>
+						<span flagid="2">java开发工程师</span>
+						<span flagid="3">AQ测试工程师</span>
+						<span flagid="4">网络/运维</span>
+						<span flagid="5">商务专员</span>
+						<span flagid="6">市场专员</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	 </div>
+	<div class="swiper-slide n8" >
+		 <div class="info">
+			<div class="center part1 ">
+				<div class="down_font center info2">
+					<span class="down_font1"></span>
+					<span class="down_font2"></span>
+				</div>
+				<div class="down_icn1 center info1">
+					<span class="down_icn2"></span>
+				</div>
+				<!--<div class="down_bg1 info1"></div>-->
+			</div>
+			<div class="down_bg2 info1 center info1">
+				<a href="http://flashnet.com.cn/Download/xiaofei/android/latest/xiaofei-latest.apk" class="icn_down_btn"></a>
+			</div>
+		 </div>
+	</div>
+	<div class="swiper-slide n9" >
+		 <div class="info">
+				<div class="center part1">
+				<div class="down_font center info2">
+					<span class="down_font1"></span>
+					<span class="down_font2"></span>
+				</div>
+				<div class="down_icn1 center info1">
+					<span class="down_icn2"></span>
+				</div>
+				<!--<div class="down_bg1 info1"></div>-->
+			</div>
+			<div class="down_bg2 center info1">
+				<a href="http://flashnet.com.cn/Download/flashcharging/android/latest/flashcharging-latest.apk" class="icn_down_btn"></a>
+			</div>
+		 </div>
+	</div>
+	</div>
+
+	 <div class="arrow"></div>
+</section>
+<div class="bg bg1"></div>
+<div class="bg bg2"></div>
+<section class="detail">
+	<div class="det_wrap">
+		<header class="det_tit_wrap">
+			<h5 class="det_tit">
+				<b class="job_name">单片机工程师</b>
+				<span class="icn_detail">>>职位详情</span>
+			</h5>
+		</header>
+		<div class="det_cont">
+			<div>
+				<h6>岗位职责:</h6>
+				<ol>
+					<li>
+						<span class="icn_num icn_num1"></span>
+						<span class="det_item">具有良好的产品设计思路及团队组织协调能力；</span>
+					</li>
+				</ol>
+			</div>
+			<div>
+				<h6>任职要求:</h6>
+				<ol>
+					<li>
+						<span class="icn_num icn_num1"></span>
+						<span>工科专业专科以上学历;</span>
+					</li>
+				</ol>
+			</div>
+			
+		</div>
+	</div>
+	<p>欢迎将你的简历投放到：<strong class="det_mail">hr@xiaofeikeji.com</strong></p>
+	<span class="icn_btn_back"></span>
+</section>
+<div class="mask">
+	<p>为了您更好的体验，请切换至竖屏观看</p>
+</div>
+<!--<script src="js/jquery-1.10.1.min.js"></script>-->
+
+<script type="text/javascript" src="js/script.js"></script>
+<script>
+hengshuping()
+	//判断手机横竖屏状态：
+function hengshuping(){
+  if(window.orientation==180||window.orientation==0){
+//      alert("竖屏状态！")  
+		$(".mask").hide()
+   }
+if(window.orientation==90||window.orientation==-90){
+//      alert("为了您更好的体验，请切换至竖屏观看")  
+		$(".mask").show()
+    }
+}
+window.addEventListener("onorientationchange" in window ? "orientationchange" : "resize", hengshuping, false);
+ 
+//移动端的浏览器一般都支持window.orientation这个参数，通过这个参数可以判断出手机是处在横屏还是竖屏状态。
+//从而根据实际需求而执行相应的程序。通过添加监听事件onorientationchange，进行执行就可以了。
+
+</script>
+<script>
+	$(function(){
+		$(".icn_btn_back").on("tap",function(){
+			$(".detail").hide()
+			return false;
+		})
+		$(".job_wrap").delegate("span","tap",function(){
+//		console.log($(this).attr("flagid"))	
+			var flagid=$(this).attr("flagid");
+			loadinfo(jobinfo[flagid])
+			$(".detail").show()
+//			return false;
+		})
+		function loadinfo(data){
+			var $det_wrap=$(".det_wrap");
+			var str="";
+			str+='<header class="det_tit_wrap">'+
+		'			<h5 class="det_tit">'+
+		'				<b class="job_name">'+data.name+'</b>'+
+		'				<span class="icn_detail">>>职位详情</span>'+
+		'			</h5>'+
+		'		</header>'+
+		'		<div class="det_cont">'+
+		'			<div>'+
+		'				<h6>岗位职责:</h6>'+
+		'				<ol>'+
+							getinfo(data.responsibility)+
+		'				</ol>'+
+		'			</div>'+
+		'			<div>'+
+		'				<h6>任职要求:</h6>'+
+		'				<ol>'+
+							getinfo(data.specification)+
+		'				</ol>'+
+		'			</div>'+
+		'			'+
+		'		</div>';
+			$det_wrap.html(str);
+		}
+		function getinfo(data){
+			var str=""
+			$.each(data,function(i,item){
+				var index=i+1;
+				var clas="icn_num"+index;
+				str+='<li>'+
+'						<span class="icn_num '+clas+'"></span>'+
+'						<span class="det_item">'+item+'</span>'+
+'					</li>';
+			})
+			return str;
+		}
+	})
+</script>
+</body>
+</html>
