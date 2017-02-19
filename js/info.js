@@ -1,20 +1,35 @@
-var info=[[{
-	   name:"Uelike(优艺客)",
-	   des:"还原Uelike官网",
-	   detail:["官网首页的整体制作，包括HTML和所有JS动态效果；","项目开发运用到CSS3、jquery、Ajax，DOM操作、BOM操作，还有自适应，实现了轮播图，拖拽窗口，自定义滚动条，选项卡等页面上常用功能；","做了性能优化，例如：尽量作用JSON格式来创建对象；替换、查找，就使用正则表达式，提高性能"],
-	   plink:"link/pc/uelike/uelike.html"
-},
+var info=[[
+//{
+//	   name:"Uelike(优艺客)",
+//	   des:"还原Uelike官网",
+//	   detail:["官网首页的整体制作，包括HTML和所有JS动态效果；","项目开发运用到CSS3、jquery、Ajax，DOM操作、BOM操作，还有自适应，实现了轮播图，拖拽窗口，自定义滚动条，选项卡等页面上常用功能；","做了性能优化，例如：尽量作用JSON格式来创建对象；替换、查找，就使用正则表达式，提高性能"],
+//	   plink:"link/pc/uelike/uelike.html"
+//},
 /*{
 		name:"爱奇艺(pc)",
 		des:"仿照爱奇艺做静态页面",
 		detail:["做到全浏览器兼容（示例效果，布局做出来啦，具体内容没填充）"],
 		plink:"link/pc/aiqiyi-pc/index.html"
 	}*/
-	],[{
-		name:"回家gohome",
-		des:" 项目利用的移动端插件swiper，让代码写起来更简单，效果简洁流畅",
-		plink:"link/mob/gohome/index.html"
-	},
+	{
+		name:"小飞官网",
+		des:"小飞官网PC端全新改版，官网重新构建，开发。",
+		detail:[
+		
+		],
+		 plink:"link/xiaofei/xiaofei2/dev/html/index.html"
+	}],
+//	],
+[{
+//		name:"回家gohome",
+//		des:" 项目利用的移动端插件swiper，让代码写起来更简单，效果简洁流畅",
+//		plink:"link/mob/gohome/index.html"
+//	},
+
+		name:"小飞官网-2016版 移动端",
+		des:"官网移动端经过多次改版，这次改版已图片介绍为主，简单明了，运用zepto+swiper完成。",
+		plink:"link/xiaofei/xiaofei1/mobile/index.html"
+	}
 	/*
 	{
 		name:"定时器",
