@@ -29,7 +29,12 @@ var info=[[
 		name:"小飞官网-2016版 移动端",
 		des:"官网移动端经过多次改版，这次改版已图片介绍为主，简单明了，运用zepto+swiper完成。",
 		plink:"link/xiaofei/xiaofei1/mobile/index.html"
-	}
+},{
+	name:'饿了么点餐界面',
+	des:'仿照饿了么界面和功能做的demo',
+	detail:['demo主要运用的Vue+Vue-router','demo由三大主要组件构成header、nav、content三部分','nav和content切换采用router切换','其中product组件又由三个子组件构成，prolist，proitem和procount，proitem又由子组件food构成，组件层层嵌套','点餐计价是一个非父子组件间的通信功能','demo纯属个人练手，熟悉下知识点O(∩_∩)O所以功能并不全，界面也比较粗糙啦~不要问我为啥不用webpack、vue-loader、vuex，这点小东西，值不当的吧~~'],
+	plink:"link/mob/elema/index.html"
+}
 	/*
 	{
 		name:"定时器",
