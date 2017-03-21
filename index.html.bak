@@ -13,7 +13,6 @@
 	<!--home页   原本考虑做个页面跳转的网站，考虑到要展示的内容块不多，就整合在一页显示，定点滚动显示的形式展示-->
 	<div id="home">
 		<!--顶部-->
-
 		<header>
 			<div class="hhead">
 		    	<div class="topbox">
